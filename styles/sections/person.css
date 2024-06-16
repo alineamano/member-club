@@ -1,0 +1,35 @@
+#person {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+
+  & .avatar {
+    width: 3.5rem;
+    height: 3.5rem;
+    background: var(--linear-gradient-avatar);
+    border-radius: 0.625rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & img {
+      width: calc(100% - 5px);
+      height: calc(100% - 5px);
+      border: 2px solid white;
+      border-radius: 0.5rem;
+      object-fit: cover;
+    }
+  }
+
+  & .person-info {
+    & h1 {
+      font: var(--title-sm);
+    }
+
+    & p {
+      font: var(--text-xs);
+    }
+  }
+}

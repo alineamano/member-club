@@ -17,8 +17,16 @@
   --gray-100: #F4F1F2;
   --white: #FFFFFF;
 
-  --linear-gradient: linear-gradient(
+  --linear-gradient-bar: linear-gradient(
     90deg,
+    #2DAA6E 0%,
+    #2DAAAA 33.33%,
+    #856CCF 66.67%,
+    #D658B3 100%
+  );
+
+  --linear-gradient-avatar: linear-gradient(
+    -45deg,
     #2DAA6E 0%,
     #2DAAAA 33.33%,
     #856CCF 66.67%,
@@ -35,8 +43,40 @@
   --text-xs: 400 0.75rem/1.4 var(--font-family);
 }
 
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--gray-200);
+  width: 100%;
+  max-width: 57rem;
+  margin: auto;
+}
+
 a {
   text-decoration: none;
   color: inherit;
 }
+
+input {
+  all: unset;
+}
  
+button {
+  all: unset;
+}
+
+*::-webkit-scrollbar {
+  width: 0.375rem;
+}
+
+*::-webkit-scrollbar-button {
+  display: none;
+}
+
+*::-webkit-scrollbar-thumb {
+  height: 4.5rem;
+  border-radius: 999px;
+  background-color: var(--gray-300);
+}
