@@ -25,6 +25,7 @@ export const showPerson = ({ name, clientSince }) => {
 
     // Person Section
     personSection.append(avatar, informations)
+    personSection.style.display = 'flex'
   } catch (error) {
     console.error(error)
   }

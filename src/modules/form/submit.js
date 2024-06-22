@@ -25,6 +25,7 @@ form.onsubmit = async (event) => {
 
     resetValues()
     showClientInfo(client)
+    cardId.value = ''
   } catch (error) {
     console.error(error)
     alert(error)

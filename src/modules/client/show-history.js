@@ -46,6 +46,7 @@ export const showHistory = ({ appointmentHistory }) => {
     })
 
     historySection.append(historyHeader, haircuts)
+    historySection.style.display = 'flex'
 
   } catch (error) {
     console.error(error)

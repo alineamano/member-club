@@ -4,11 +4,11 @@ export const showCard = ({ id, loyaltyCard }) => {
   try {
     // Header
     const header = document.createElement('header')
-    const about = `
-      <div class="about">
-        <h2>Cartão Fidelidade</h2>
-        <p>Ao fazer cortes de cabelo, o décimo sai de graça!</p>
-      </div>
+    const about = document.createElement('div')
+    about.classList.add('about')
+    about.innerHTML = `
+      <h2>Cartão Fidelidade</h2>
+      <p>Ao fazer cortes de cabelo, o décimo sai de graça!</p>
     `
 
     const idCard = document.createElement('div')
@@ -45,8 +45,8 @@ export const showCard = ({ id, loyaltyCard }) => {
       usage.append(slot)
     }
 
-    loyaltyCardSection.append(usage)
-    // const 
+    loyaltyCardSection.append(header, usage)
+    loyaltyCardSection.style.display = 'flex'
   } catch (error) {
     console.error(error)
   }

@@ -35,6 +35,7 @@ export const showProgress = ({ loyaltyCard }) => {
     gift.classList.add('gift')
 
     progressSection.append(overview, gift)
+    progressSection.style.display = 'flex'
   } catch (error) {
     console.error(error)
   }
