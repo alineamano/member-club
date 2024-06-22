@@ -10,7 +10,8 @@
         {"date": "01/02/2024", "time": "17:30"},
         {"date": "03/01/2024", "time": "15:00"},
         {"date": "28/11/2023", "time": "14:00"},
-        {"date": "23/10/2023", "time": "15:00"}
+        {"date": "23/10/2023", "time": "15:00"},
+        {"date": "21/10/2023", "time": "15:00"}
       ],
       "loyaltyCard": {
         "totalCuts": 7,
@@ -49,6 +50,39 @@
         "cutsNeeded": 8,
         "cutsRemaining": 3
       }
+    },
+    {
+      "id": "523-114-876-909",
+      "name": "Mayk",
+      "clientSince": "15/07/2023",
+      "appointmentHistory": [
+        {"date": "22/04/2024", "time": "16:00"},
+        {"date": "18/03/2024", "time": "16:30"},
+        {"date": "24/01/2024", "time": "17:45"},
+        {"date": "20/12/2023", "time": "15:15"},
+        {"date": "22/04/2023", "time": "16:00"},
+        {"date": "18/03/2023", "time": "16:30"},
+        {"date": "24/01/2023", "time": "17:45"},
+        {"date": "20/12/2022", "time": "15:15"}
+      ],
+      "loyaltyCard": {
+        "totalCuts": 8,
+        "cutsNeeded": 8,
+        "cutsRemaining": 0
+      }
+    },
+    {
+      "id": "523-114-876-910",
+      "name": "Rodrigo",
+      "clientSince": "15/07/2023",
+      "appointmentHistory": [
+      ],
+      "loyaltyCard": {
+        "totalCuts": 0,
+        "cutsNeeded": 13,
+        "cutsRemaining": 13
+      }
     }
+
   ]
 }
