@@ -1,0 +1,85 @@
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0 0 0 /.5);
+
+  & dialog {
+    border: none;
+    border-radius: .5rem;  
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--gray-500);
+
+    --max-width: 375px;
+    width: min(var(--max-width, 100% - 1.5rem));
+    overflow: hidden;
+
+    & > img {
+      position: absolute;
+      top: -10rem;
+      left: 0;
+      width: 200%;
+      height: 200%;
+      z-index: -1;
+      opacity: .1;
+      animation: fall 4s linear infinite;
+    }
+
+    & header {
+      display: flex;
+      justify-content: end;
+
+      & button {
+        padding: 1rem;
+        border-top-right-radius: .5rem;
+        cursor: pointer;
+        font: var(--title-md);
+      }
+    }
+
+    & .content {
+      height: 100%;
+      border-bottom-left-radius: .5rem;
+      border-bottom-right-radius: .5rem;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: .5rem;
+      padding: 2rem;
+
+      & img {
+        width: 4rem;
+        height: 4rem;
+      }
+
+      & h2 {
+        font: var(--title-md);
+        color: var(--gray-600);
+      }
+
+      & p {
+        font: var(--text-md);
+      }
+    }
+  }
+
+  @media (width >= 60rem) {
+    & dialog {
+      --max-width: 40rem;
+    }
+  }
+}
+
+@keyframes fall {
+  100% {
+    transform: translateY(10rem);
+  }
+}
+
+

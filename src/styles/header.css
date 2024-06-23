@@ -8,6 +8,11 @@
 
   gap: 2rem;
 
+  &.initial {
+    height: 100vh;
+    padding-block: auto;
+  }
+
   & img {
     width: 7.25rem;
   }

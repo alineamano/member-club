@@ -48,6 +48,7 @@ html {
 }
 
 body {
+  position: relative;
   background-color: var(--gray-200);
   width: 100%;
   overflow-x: hidden;

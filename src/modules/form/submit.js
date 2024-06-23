@@ -4,6 +4,8 @@ import { getClientById } from "../services/get-client-by-id"
 
 const form = document.querySelector('form')
 const cardId = document.getElementById('card-id')
+const header = document.getElementById('header')
+const main = document.querySelector('main')
 
 form.onsubmit = async (event) => {
   event.preventDefault()
@@ -22,6 +24,9 @@ form.onsubmit = async (event) => {
     if (!client) {
       throw new Error('Desculpe, não conseguimos encontrar informações para o ID do Cliente fornecido. Verifique se digitou corretamente e tente novamente.')
     }
+
+    header.classList.remove('initial')
+    main.style.display = 'grid'
 
     resetValues()
     showClientInfo(client)

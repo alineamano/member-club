@@ -1,3 +1,5 @@
+import { showModal } from "./modal"
+
 const loyaltyCardSection = document.getElementById('loyalty-card')
 
 export const showCard = ({ id, loyaltyCard }) => {
@@ -47,6 +49,11 @@ export const showCard = ({ id, loyaltyCard }) => {
 
     loyaltyCardSection.append(header, usage)
     loyaltyCardSection.style.display = 'flex'
+
+    // Congrats message
+    if (loyaltyCard.cutsRemaining === 0) {
+      showModal()
+    }
   } catch (error) {
     console.error(error)
   }

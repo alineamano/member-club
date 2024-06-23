@@ -39,6 +39,8 @@
       justify-content: center;
       
       & p {
+        width: 6.6875rem;
+        text-align: center;
         font: var(--subtitle-sm);
         color: var(--gray-500)
       }
@@ -95,6 +97,7 @@
         height: 2rem;
 
         & p {
+          width: 7.8125rem;
           font: var(--subtitle-md);
         }
       }
