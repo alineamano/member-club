@@ -7,8 +7,6 @@ Member Club is a web application developed to manage customer loyalty cards
 </p>
 
 <p align="center">
-  <a href="alineamano.github.io/member-club">Demo</a>
-  ·
   <a href="#-tecnologies">Technologies</a>
   ·
   <a href="#-features">Project</a>
